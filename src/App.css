@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(40, 37, 37);
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 25%;
+  margin-top: 40px;
+  display: block;
+}
+
+.cards-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px 0;
+  gap: 60px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin: 0 10vw;
+}
+
+.card button {
+  color: #fff;
+  padding: 80px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.card button:hover {
+  color: #dcdada;
+  background-color: #dcdada;
+}
+
+.card img {
+  display: block;
+  width: 256px;
+  height: 180px;
+}
+
+.card .invisible {
+  display: none;
+}
+
+.card .invisible:hover {
+  color: #dcdada;
+}
+
+.gameover {
+  background-color: #201e1e;
+  color: #fff;
+  box-shadow: 5px 5px 50px #000;
+  width: 50%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  border-radius: 15px;
+  padding-top: 20px;
+}
+
+.gameover button {
+  padding: 12px 28px;
+  border: 1px solid rgb(255, 166, 0);
+  background-color: inherit;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.gameover button:hover {
+  transition: 0.4s;
+  background-color: rgb(255, 166, 0);
+}
