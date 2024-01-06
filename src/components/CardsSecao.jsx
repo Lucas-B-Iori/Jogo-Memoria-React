@@ -4,6 +4,8 @@ import LISTA_CARDS from '../listaCards'
 import GameOver from './GameOver'
 
 export default function CardsSecao() {
+    LISTA_CARDS.sort(() => Math.random() - 0.5)
+
     const [ cards, setCards ] = useState([...LISTA_CARDS.map(innerArr => [...innerArr].map(obj => {return {...obj}}))])
     const [ choice, setChoice ] = useState([])
 
